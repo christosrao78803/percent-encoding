@@ -1,0 +1,17 @@
+{
+  "name": "percent-encoding",
+  "version": "0.1.0",
+  "description": "Encodes and decodes arbitrary strings into a URL-safe format using byte-level percent escapes.",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": "./src/index.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "dependencies": {}
+}
