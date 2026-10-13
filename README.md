@@ -37,3 +37,10 @@ characters are special where.
   and byte sequences that are not valid UTF-8 (`%FF`).
 - `decode` accepts lowercase hex digits even though `encode` always emits
   uppercase, matching RFC 3986 §2.1.
+
+## Performance
+
+The window keeps a bounded buffer, so `push` is constant time and memory does not
+grow with the length of the stream. `peak` and `trough` are linear in the window
+size, which is the trade that keeps `push` cheap.
+
